@@ -77,7 +77,7 @@ public class MatissaExponentConverter
     *    converts the mantissa-exponent string to its equivalent real number
     *    
     *    precondition: str contains one space seperating the matissa from the exponent 
-    *
+    *t
     * 
     *         see the student tester for sample input/output
     */
@@ -103,26 +103,6 @@ public class MatissaExponentConverter
        return mantissa*Math.pow(2,exp);
    }
    
-   public static String toBinary(String num)
-   {
-       String ans="";
-       int temp=Integer.parseInt(num);
-       int count=(int)Math.pow(2, num.length()-1);
-       ArrayList<Integer> arr=new ArrayList<Integer>();
-       for(int x=count; x>=0; x/=2)
-       {
-           if(temp-Math.pow(2,x)>=0)
-           {
-               temp-=Math.pow(2,x);
-               arr.add(1);
-           }
-           else
-               arr.add(0);
-       }
-       for(int x=0; x<arr.size(); x++)
-           ans+=arr.get(x);
-       return ans;
-   }
    
    public static String toDecimalBinary(String num)
    {
