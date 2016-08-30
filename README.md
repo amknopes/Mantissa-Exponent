@@ -1,5 +1,5 @@
 # Mantissa-Exponent
-This is java code that converts the manissa exponent format used in floating point binary storage
+This is java code that converts the mantissa exponent format used in floating point binary storage
 
 toMantissaExponent(double val, int m, int e) 
 >val is the input binary number  
